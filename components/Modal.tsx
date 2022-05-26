@@ -12,7 +12,7 @@ import useAuth from '../hooks/useAuth'
 import toast, { Toaster } from 'react-hot-toast'
 
 function Modal() {
-    const showModal = useRecoilValue(modalState)
+  	const [showModal, setShowModal] = useRecoilState(modalState)
 
 	return (
 		<MuiModal open={showModal} onClose={handleClose} className="fixed !top-7 left-0 right-0 z-50 mx-auto w-full max-w-5xl overflow-hidden overflow-y-scroll rounded-md scrollbar-hide">
