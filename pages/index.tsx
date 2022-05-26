@@ -1,8 +1,8 @@
 import Head from 'next/head'
 import Image from 'next/image'
 import { useRecoilValue } from 'recoil'
-import { modalState, movieState } from '../atoms/modalAtom.'
-import { Header, Banner, Row, Footer } from '../components'
+import { modalState } from '../atoms/modalAtom'
+import { Header, Banner, Row, Modal, Footer } from '../components'
 import { Movie } from '../typings'
 import { useAuth } from '../hooks'
 import requests from '../utils/requests'
@@ -29,7 +29,7 @@ const Home = ({
     trendingNow,
 }: Props) => {
     const { user, loading } = useAuth()
-    // const showModal = useRecoilValue(modalState)
+    const showModal = useRecoilValue(modalState)
 
     if (loading) return null
 
@@ -58,7 +58,8 @@ const Home = ({
                     <Row title="Documentaries" movies={documentaries} />
                 </section>
             </main>
-            {/* Modal */}
+
+            {showModal && <Modal />}
 
             <Footer />
         </div>
