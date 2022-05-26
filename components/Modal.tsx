@@ -15,7 +15,7 @@ function Modal() {
   	const [showModal, setShowModal] = useRecoilState(modalState)
 
 	return (
-		<MuiModal open={showModal} onClose={handleClose} className="fixed !top-7 left-0 right-0 z-50 mx-auto w-full max-w-5xl overflow-hidden overflow-y-scroll rounded-md scrollbar-hide">
+		<MuiModal open={showModal} className="fixed !top-7 left-0 right-0 z-50 mx-auto w-full max-w-5xl overflow-hidden overflow-y-scroll rounded-md scrollbar-hide">
 			Modal
 		</MuiModal>
 	)
