@@ -35,7 +35,7 @@ function Banner({ netflixOriginals }: Props) {
 					Play
 				</button>
 
-				<button className="bannerButton text-sm font-small bg-[gray]/70" onClick=''>
+				<button className="bannerButton text-sm font-small bg-[gray]/70">
 					<InformationCircleIcon className="h-5 w-5 md:h-8 md:w-8" /> More Info
 				</button>
 			</div>
