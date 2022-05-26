@@ -15,9 +15,7 @@ function Modal() {
   	const [showModal, setShowModal] = useRecoilState(modalState)
 
 	return (
-		<div open={showModal} className="fixed !top-7 left-0 right-0 z-50 mx-auto w-full max-w-5xl overflow-hidden overflow-y-scroll rounded-md scrollbar-hide">
-			Modal
-		</div>
+		<div>Modal</div>
 	)
 }
 
