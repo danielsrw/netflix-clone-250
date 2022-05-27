@@ -1,10 +1,9 @@
 import Head from 'next/head'
 import Link from 'next/link'
 import { useState } from 'react'
+import { Table, Loader } from './'
 import { CheckIcon } from '@heroicons/react/outline'
 import useAuth from '../hooks/useAuth'
-import { Table } from './'
-import Loader from './Loader'
 
 function Plans() {
 	return (
