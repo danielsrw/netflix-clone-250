@@ -49,12 +49,24 @@ const Home = ({
 
                 <section>
                     <Row title="Trending Now" movies={trendingNow} />
+                    <br />
+                    <br />
                     <Row title="Top Rated" movies={topRated} />
+                    <br />
+                    <br />
                     <Row title="Action Thrillers" movies={actionMovies} />
+                    <br />
+                    <br />
                     {/* My List */}
                     <Row title="Comedies" movies={comedyMovies} />
+                    <br />
+                    <br />
                     <Row title="Scary Movies" movies={horrorMovies} />
+                    <br />
+                    <br />
                     <Row title="Romance Movies" movies={romanceMovies} />
+                    <br />
+                    <br />
                     <Row title="Documentaries" movies={documentaries} />
                 </section>
             </main>
